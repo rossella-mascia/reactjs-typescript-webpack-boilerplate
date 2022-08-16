@@ -3,7 +3,7 @@
 A starter frontend boilerplate built with:
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [Babel (8)](https://babeljs.io/)
+- [Babel (7)](https://babeljs.io/)
 - [Webpack (5)](https://webpack.js.org/)
 <!-- - [PostCSS](https://postcss.org/)
 - [Jest](https://jestjs.io/)
