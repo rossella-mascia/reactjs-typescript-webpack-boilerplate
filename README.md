@@ -17,7 +17,8 @@ This also uses [lint-staged](https://github.com/okonet/lint-staged) for running 
 - Support for both TypeScript and JavaScript as needed.
 - May be extended to be used with [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), or [Angular](https://angular.io/).
 - Webpack Dev Server plugin for local development.
-- Minification of TypeScript/JavaScript and CSS processed files.
+- Minification of TypeScript/JavaScript and CSS/SCSS processed files.
+- Support for both CSS and SCSS as needed.
 - Assets optimization.
 - Webpack Bundle Analyzer for visualising script output and usage.
 
@@ -30,9 +31,10 @@ This also uses [lint-staged](https://github.com/okonet/lint-staged) for running 
 
 ```none
 src
-└── css
-│    ├── all
-│    └── styles.css
+└── styles
+│    ├── _global.scss
+│    └── _variables.scss
+│    └── index.scss
 ├── index.ts
 public
 ├── assets
