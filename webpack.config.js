@@ -8,7 +8,8 @@ module.exports = {
     mode: mode,
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'build')
+        path: path.resolve(__dirname, 'build'),
+        assetModuleFilename: 'images/[hash][ext][query]',
     },
     devtool: 'source-map',
     devServer: {
@@ -18,8 +19,20 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: 'asset',
+            },
+            {
                 test: /\.(s[ac]|c)ss$/i,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: { publicPath: '' },
+                    },
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader'
+                ],
             },
             {
                 test: /\.ts$/,
