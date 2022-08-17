@@ -1,4 +1,4 @@
-# Typescript Webpack 5 Boilerplate
+# React.js typescript Webpack 5 Boilerplate
 
 A starter frontend boilerplate built with:
 

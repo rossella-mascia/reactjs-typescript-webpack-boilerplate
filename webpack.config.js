@@ -35,7 +35,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.ts$/,
+                test: /\.t(s[ac]|sx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
@@ -44,7 +44,8 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.ts', '.js']
+        extensions: ['.ts', '.js', '.tsx', '.jsx'],
+        modules: ['src', 'node_modules'],
     },
     plugins: [
         new HtmlWebpackPlugin({
