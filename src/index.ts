@@ -1,2 +1,5 @@
 import './styles/index.scss';
-console.log('gino');
+
+export function sum(a: number, b: number): number {
+    return a + b;
+}
